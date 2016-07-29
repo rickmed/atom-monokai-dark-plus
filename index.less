@@ -1,3 +1,5 @@
+@import "../../styles.less";
+
 @white: #fff;
 @blue: #66D9EF;
 @gutter: #F8F8F2;
@@ -14,7 +16,7 @@
 @class: #A6E22E;
 @function: @class;
 @attribute: @class;
-@parameter: #FD971F;
+@parameter: #FF9933;
 
 :host, atom-text-editor {
   ::-webkit-scrollbar {
@@ -145,9 +147,25 @@
     background-color: @const;
   }
 
-  .invisible-character {
-    color: @dark;
+// Begin Plus added styles
+  .string.quoted.template {
+    .meta.brace.round,
+    .variable.other.object,
+    .variable.other.readwrite,
+    .variable.other.property {
+      color: @gutter;
+    }
   }
+
+  .punctuation.section.embedded.jsx.begin,
+  .punctuation.section.embedded.jsx.end {
+    color: @blue;
+  }
+
+  .variable.language.this {
+    font-style: italic;;
+  }
+// End Plus added styles
 }
 
 atom-text-editor::shadow {
