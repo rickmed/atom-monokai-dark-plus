@@ -47,4 +47,8 @@ function template (title = 'My title', link, name) {
   }
 }
 
+
+
+// to not show eslint marks
 template()
+hello()
