@@ -2,7 +2,7 @@
 
 const obj = {
   mandatory (fn) {
-    const msg = `Missing ${fn.name} call`
+    const msg = `Missing ${this.name} call`
     throw new Error(msg)
   }
 }

@@ -1,8 +1,8 @@
 {
   "name": "monokai-dark-plus",
   "theme": "syntax",
-  "version": "0.1.0",
-  "description": "A dark (plus) monokai theme",
+  "version": "0.1.1",
+  "description": "A dark (plus) monokai theme for language-babel",
   "author": {
     "name": "Ricardo Medina",
     "email": "rickmedina205@gmail.com"
